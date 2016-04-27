@@ -484,7 +484,7 @@ function nox {
     ./boot.sh
     mkdir build
     cd build
-    ../configure
+    ../configure --with-boost-libdir=/usr/lib/x86_64-linux-gnu
     make -j3
     #make check
 
@@ -520,7 +520,7 @@ function nox13 {
     ./boot.sh
     mkdir build
     cd build
-    ../configure
+    ../configure --with-python=no --with-boost=/usr/lib/x86_64-linux-gnu --with-boost-unit-test-framework=boost_unit_test_framework --with-boost-filesystem=boost_filesystem --with-boost-system=boost_system
     make -j3
     #make check
 
